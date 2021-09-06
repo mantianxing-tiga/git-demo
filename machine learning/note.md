@@ -1,4 +1,17 @@
 # 机器学习笔记（初版）
+## 机器学习的数据
+* 机器学习的数据都是文件格式(.csv/.dat)，并没有使用 mysql 之类的数据库存储数据，因为 mysql 的读取性能比较弱，不利于机器学习的数据训练
+* 通常使用 pandas 读取数据，pandas 是基于 numpy 的扩展程序，读取数据以及处理数据非常快
+* numpy 处理数据快的原因是它抛弃了 Global Interpreter Lock(GIL)，允许真正的多进程操作，可以加快处理速度
+![进程锁示意图](img\single_core_multi_threads.jpg)
+![多核进程锁](img\multi_cores_multi_threads.jpg)
+* GIL 是 python 早期为了数据安全而设置的进程锁，算是**历史遗留问题**，GIL 的存在使得 cpu 同时只能执行一个线程，纵使是多核 cpu，线程 1 在第一个 core，线程 2 在第二个 core，想要执行第二个线程还是得等线程 1 遇到 IO 操作或者 time tick (线程 1 仍然会竞争这把锁) 达到最大执行时间。
+### 数据集获取
+* Kaggle：数据量巨大
+* UCI：
+    * 数据比较专业
+    * 数据量在几十万的量级
+* scikit-learn：数据量较小，方便学习
 ### 数据集格式
 **特征值+目标值**
 <style type="text/css">
@@ -44,7 +57,6 @@
 
 <span style='color:red'>注：有些数据集可以没有目标值</span>
 
----
 
 ### 原始数据处理
 * 使用 pandas 对数据进行处理
