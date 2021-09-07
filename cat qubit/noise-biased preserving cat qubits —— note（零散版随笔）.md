@@ -61,7 +61,8 @@
     * 0 的个数相同的态定义在同一个纬度的等分节点上（例如：$\left | 001 \right \rangle, \, \left | 010 \right \rangle , \, \left |100 \right \rangle$​）
     * 从北极开始到南极之间的每一个纬度，量子态中 1 的个数逐渐增加，直到南极为 $\left | 111 \right \rangle$
     * 球面上的点的颜色代表该量子态的相位
-    * ![q-sphere](./img/q-sphere.png)
+![q-sphere](./img/q-sphere.png)
+<span style='text-align:center; display: block'>Fig. 1. Diagram of Q-Sphere</span>
 
 * ZZ gate 的实现
 
@@ -126,7 +127,25 @@
 
 # 本文方案简介
 
-### 物理系统：参量驱动非线性谐振腔（parametrically driven nonlinear oscillator）
+## 物理系统：参量驱动非线性谐振腔（parametrically driven nonlinear oscillator）
+### Kerr nonlinear oscillator (KNR)
+![KNR](./img/KNR.jpg)
+<span style='text-align:center; display: block'>Fig. 2. Scheme of the nonlinear resonator</span>
+如 Fig. 2 所示，非线性谐振腔是在一段 $\lambda/2$ 波导谐振腔中插入一个非线性的约瑟夫森结所构成的，波导腔与传输线以 $C_c$ 电容耦合，用作信号读取（读取反射信号 $out$），阻抗匹配为 $50\Omega$（保证没有杂波）。
+
+### 等效电路模型
+![equiCircuit](./img/equivalent_circuit.jpg)
+<span style='text-align:center; display: block'>Fig. 3. Equivalent citcuit of the nonlinear resonator</span>
+将 Fig. 2 转化为如 Fig. 3 所示的等效电路模型，求解系统哈密顿量
+
+#### 系统哈密顿量
+$$
+H = \frac{\phi_1^2}{2L_e} - E_J \mathrm{cos} \left ( \frac{\phi -\phi_1}{\phi_0}   \right ) + \frac{q^2}{2C_e}
+$$
+其中 $\phi_0 = \hbar/2e$ 为**约化磁通量子**
+
+
+
 
 ### 物理比特：2-component cat qubits
 
@@ -156,7 +175,7 @@
 * 通过改变参量驱动的 phase，利用在 phase space 的旋转实现 topological phase，可以构造 bias-preserving CX 门
 * 门操作（主要是改变相位）的控制错误也是 biased-preserving 的
 
-### 本文主要内容
+## 本文主要内容
 
 - cat qubits 的**制备**（我们可以使用 **shortcuts** 制备）
 - ZZ 门的实现，ZZ 门可以用来降低在进行 magic state distillation 时的开销
