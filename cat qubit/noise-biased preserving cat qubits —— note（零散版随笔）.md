@@ -128,14 +128,14 @@
 # 本文方案简介
 
 ## 物理系统：参量驱动非线性谐振腔（parametrically driven nonlinear oscillator）
-### Kerr nonlinear oscillator (KNR)
+### Kerr nonlinear resonator (KNR)
 ![KNR](./img/KNR.jpg)
 <span style='text-align:center; display: block'>Fig. 2. Scheme of the nonlinear resonator</span>
 如 Fig. 2 所示，非线性谐振腔是在一段 $\lambda/2$ 波导谐振腔中插入一个非线性的约瑟夫森结所构成的，波导腔与传输线以 $C_c$ 电容耦合，用作信号读取（读取反射信号 $out$），阻抗匹配为 $50\Omega$（保证没有杂波）。
 
 ### 等效电路模型
 ![equiCircuit](./img/equivalent_circuit.jpg)
-<span style='text-align:center; display: block'>Fig. 3. Equivalent citcuit of the nonlinear resonator</span>
+<span style='text-align:center; display: block'>Fig. 3. Equivalent circuit of the nonlinear resonator</span>
 将 Fig. 2 转化为如 Fig. 3 所示的等效电路模型，求解系统哈密顿量
 
 #### 系统哈密顿量
