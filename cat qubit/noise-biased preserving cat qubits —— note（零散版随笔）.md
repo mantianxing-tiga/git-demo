@@ -1,9 +1,11 @@
-# noise-biased preserving cat qubits —— note（零散版待整理）
+# cat qubits —— note（零散版待整理）
 
 ## 文章中的不足
 
 * 哈密顿量 pauli Y 前系数为 $e^{-2\alpha^2}$，表明 Y error 是否还可以再降低，现在是平方，是否可以四次方
 * ZZ 门，实现任意旋转角度 $\theta = 4J_{12} \alpha^2 t$ ，可以看出有很多个参数可以调，$t = 100 ns$ 还不算很快，目前量子门脉冲大都是 $40 ns$ ，可以增强耦合强度（error 会线性增加，需要同时增大 $\alpha$ 进行压制）加快 gate 操作的速度
+* 物理实现比较难
+* 施加控制的耦合比较难实现
 
 ## 文章中还可以优化的部分
 
@@ -183,3 +185,5 @@ $$
 - 在此系统的一组通用量子门集合下实现纠错：**repetition code**(主要抑制 **phase errors**) $\longrightarrow$​​ **CSS code**(主要应对剩下的 **symmetric noise**)
 - biased-preserving CX 门使得纠错的 threshold 提升了**两倍**，同时使得 repetition gadgets 的开销降低了 **5 倍**
 
+## 参考文献
+[1]
