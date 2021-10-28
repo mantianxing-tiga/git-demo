@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" modified="2021-10-26T10:34:14.392Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="LgS6BVfJ7irQOuBf074h" version="15.5.9" type="github">
+  <diagram id="9pByv-Ow9uPtUTl--qY_" name="Page-1">
+    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_n2Zn3i6znbx9n-oYwBW-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_n2Zn3i6znbx9n-oYwBW-1" target="_n2Zn3i6znbx9n-oYwBW-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_n2Zn3i6znbx9n-oYwBW-1" value="Quanore" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="90" width="690" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="_n2Zn3i6znbx9n-oYwBW-2" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-395" y="275" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
