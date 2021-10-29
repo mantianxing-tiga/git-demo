@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window</class>
+ <widget class="QMainWindow" name="window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Noname</string>
+  </property>
+  <widget class="QWidget" name="widget">
+   <widget class="QPushButton" name="button">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>300</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>提交</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="freq_input">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>450</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>freq</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="anharm_input">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>450</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>anharm</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="coup_input">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>450</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>coup matrix</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="num_input">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>450</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>qubits num</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="ip_input">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>450</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>ip</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
